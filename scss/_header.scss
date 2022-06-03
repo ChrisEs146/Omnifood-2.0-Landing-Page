@@ -9,6 +9,7 @@
   background-color: $Background-Color;
   box-shadow: 0 2px 5px $Grey-4;
   padding: 0 $Padding-normal;
+  z-index: 1;
 
   &__btn-skip {
     &:link,
