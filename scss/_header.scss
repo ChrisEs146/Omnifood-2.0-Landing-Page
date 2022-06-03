@@ -66,7 +66,7 @@
     :is(li) {
       display: flex;
       gap: $Gap-small;
-    align-items: center;
+      align-items: center;
       justify-content: center;
     }
   }
@@ -102,10 +102,12 @@
   }
 }
 
+// Hamburger menu animation
 .open {
   .header__lines-container {
     transform: translateX(-5px);
   }
+
   .header__links-list {
     animation-name: fade-in;
     animation-duration: 0.7s;
@@ -119,6 +121,7 @@
   .line-middle {
     border-radius: 2px;
   }
+
   .line-top {
     height: 0.3rem;
     transform: translate(10px, 1px) rotate(45deg);
@@ -141,6 +144,7 @@
   transition: all 0.3s;
 }
 
+// Animations
 @keyframes fade-in {
   0% {
     opacity: 0;
