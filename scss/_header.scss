@@ -57,6 +57,10 @@
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    :is(img) {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
     align-items: center;
     gap: 4.8rem;
     list-style: none;
