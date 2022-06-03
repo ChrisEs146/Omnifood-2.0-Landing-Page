@@ -32,3 +32,15 @@
     height: 1.6rem;
     max-height: 2rem;
   }
+
+  &__links-list {
+    display: flex;
+    align-items: center;
+    gap: 4.8rem;
+    list-style: none;
+
+    img {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
