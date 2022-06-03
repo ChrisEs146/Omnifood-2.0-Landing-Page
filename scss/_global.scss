@@ -21,3 +21,20 @@ body {
   line-height: 1;
   color: $Grey-2;
 }
+
+a {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $Grey-1;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-500;
+    transition: color $slow-transition;
+  }
+
+  &:hover,
+  &:active {
+    color: $Primary-Color;
+  }
+}
