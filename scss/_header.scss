@@ -71,6 +71,10 @@
     }
   }
 
+  &__lines-container {
+    transition: transform 0.2s;
+  }
+}
 
 .open {
   .header__lines-container {
