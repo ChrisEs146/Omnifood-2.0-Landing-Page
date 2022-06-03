@@ -57,17 +57,17 @@
     animation-direction: normal;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
     :is(img) {
       width: 2.4rem;
       height: 2.4rem;
     }
-    align-items: center;
-    gap: 4.8rem;
-    list-style: none;
 
-    img {
-      width: 4.8rem;
-      height: 4.8rem;
+    :is(li) {
+      display: flex;
+      gap: $Gap-small;
+    align-items: center;
+      justify-content: center;
     }
   }
 
