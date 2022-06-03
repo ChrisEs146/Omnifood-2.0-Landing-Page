@@ -1,7 +1,8 @@
 "use strict";
 // SELECTIONS
 
-const header = document.querySelector(".header");
+const header = document.querySelector(".js-header");
+const overlay = document.querySelector(".js-overlay");
 
 // Events
 header.addEventListener("click", (e) => {
