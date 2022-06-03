@@ -44,3 +44,16 @@
       height: 4.8rem;
     }
   }
+
+  &__hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    width: 4rem;
+    height: 4rem;
+    background-color: $White;
+    box-shadow: 1px 1px 3px $Grey-4;
+  }
