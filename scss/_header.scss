@@ -106,6 +106,14 @@
   .header__lines-container {
     transform: translateX(-5px);
   }
+  .header__links-list {
+    animation-name: fade-in;
+    animation-duration: 0.7s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
   .line-bottom,
   .line-bottom,
   .line-middle {
