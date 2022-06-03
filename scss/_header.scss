@@ -7,3 +7,23 @@
   background-color: $Background-Color;
   box-shadow: 0 2px 5px $Grey-4;
   padding: 0 $Padding-small;
+
+  &__btn-skip {
+    &:link,
+    &:visited {
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      font-size: $font-size-small;
+      color: $White;
+      background-color: $Grey-1;
+      padding: 0.4rem 0.8rem;
+      border: none;
+      transform: translateY(-120%);
+      transition: transform $slow-transition;
+    }
+
+    &:focus {
+      transform: translateY(0);
+    }
+  }
