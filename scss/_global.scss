@@ -9,3 +9,15 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight-400;
+  line-height: 1;
+  color: $Grey-2;
+}
