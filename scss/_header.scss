@@ -70,3 +70,24 @@
       margin-bottom: 0.5rem;
     }
   }
+
+
+.open {
+  .header__lines-container {
+    transform: translateX(-5px);
+  }
+  .line-bottom,
+  .line-bottom,
+  .line-middle {
+    border-radius: 2px;
+  }
+  .line-top {
+    height: 0.3rem;
+    transform: translate(10px, 1px) rotate(45deg);
+  }
+
+  .line-bottom {
+    height: 0.3rem;
+    transform: translate(10px, -1px) rotate(-45deg);
+  }
+}
