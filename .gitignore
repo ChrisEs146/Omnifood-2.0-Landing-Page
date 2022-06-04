@@ -4,3 +4,9 @@ node_modules
 #Configs
 .vscode
 
+#Cache
+.parcel-cache
+
+#dist
+dist
+

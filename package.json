@@ -4,12 +4,15 @@
   "description": "Omnifood Landing Page",
   "browserlist": "> 0.5%, not dead",
   "scripts": {
-    "run": "parcel index.html",
+    "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Chris",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.6.0",
+    "@parcel/transformer-sass": "^2.6.0",
+    "@parcel/transformer-webmanifest": "^2.6.0",
     "parcel": "^2.6.0",
     "sass": "^1.52.1"
   }

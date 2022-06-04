@@ -1,0 +1,25 @@
+// Font related
+$font-family: "Rubik", sans-serif;
+$font-weight-400: 400;
+$font-weight-500: 500;
+$font-size-normal: 1.6rem;
+$font-size-small: 1.4rem;
+
+// transitions
+$slow-transition: 0.3s ease-in;
+
+// Padding
+$Padding-small: 2rem;
+$Padding-normal: 3.2rem;
+$Padding-big: 4.8rem;
+
+// Flex or Grid Gaps
+$Gap-small: 2rem;
+$Gap-mid: 3rem;
+$Gap-big: 4rem;
+
+// Breakpoints
+$Screen-small: 31.25em; //500px
+$Screen-mid: 43.75em; // 700px
+$Screen-large: 61.25em; //980px
+$Screen-extra-large: 71.875em; //1150px

@@ -9,8 +9,8 @@
       content="Omnifood is an AI powered food
        subscription that will make you eat 
        healthy again, 365 days per year. 
-       It's tailored to your personal taste
-        and nutritional needs."
+       It's tailored to your personal taste 
+       and nutritional needs."
     />
     <link rel="icon" href="./img/favicons/favicon.png" />
     <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png" />
@@ -34,5 +34,60 @@
     <script defer src="./script.js"></script>
     <title>Ominfood &dash; Never cook again!</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header js-header">
+      <a href="#main-content" class="header__btn-skip">Skip to main content</a>
+      <nav class="header__navigation">
+        <a href="#">
+          <img class="header__logo" src="./img/omnifood-logo.png" alt="Omnifood logo" />
+        </a>
+        <ul class="header__links-list">
+          <li>
+            <img
+              src="./img/icons/info.png"
+              alt="Information icon with black background"
+              class="header__link-icon"
+            />
+            <a href="#How-it-works" class="header__link">How it works</a>
+          </li>
+          <li>
+            <img
+              src="./img/icons/cutlery.png"
+              alt="Icon with a set of cutlery"
+              class="header__link-icon"
+            />
+            <a href="#Meals" class="header__link">Meals</a>
+          </li>
+          <li>
+            <img src="./img/icons/review.png" alt="Message box icon" class="header__link-icon" />
+            <a href="#Testimonials" class="header__link">Testimonials</a>
+          </li>
+          <li>
+            <img
+              src="./img/icons/price-tag.png"
+              alt="Icon of a price tag"
+              class="header__link-icon"
+            />
+            <a href="#Pricing" class="header__link">Pricing</a>
+          </li>
+          <li>
+            <img
+              src="./img/icons/checked.png"
+              alt="Icon of a checked symbol"
+              class="header__link-icon"
+            />
+            <a id="cta-link" href="#CTA" class="header__link">Try for free</a>
+          </li>
+        </ul>
+        <div class="header__hamburger-menu">
+          <div class="header__lines-container">
+            <span class="header__hamburger-line line-top"></span>
+            <span class="header__hamburger-line line-middle"></span>
+            <span class="header__hamburger-line line-bottom"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
+  <div class="overlay js-overlay hide-element"></div>
 </html>
