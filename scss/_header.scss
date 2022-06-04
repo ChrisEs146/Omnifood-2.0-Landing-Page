@@ -149,7 +149,7 @@
     visibility: visible;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(30%);
     opacity: 1;
     visibility: visible;
     pointer-events: visible;
@@ -158,7 +158,7 @@
 
 @keyframes fade-out {
   0% {
-    transform: translateX(0);
+    transform: translateX(30%);
     opacity: 1;
     visibility: visible;
     pointer-events: visible;
