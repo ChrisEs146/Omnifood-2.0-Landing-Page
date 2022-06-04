@@ -229,3 +229,11 @@
     }
   }
 }
+
+@media (min-width: $Screen-extra-large) {
+  .header {
+    &__navigation {
+      padding: 0 $Padding-big;
+    }
+  }
+}
