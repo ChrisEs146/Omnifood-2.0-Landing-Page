@@ -16,10 +16,6 @@
       transform: translateY(-120%);
       transition: transform $slow-transition;
     }
-
-    &:focus {
-      transform: translateY(0);
-    }
   }
 
   &__logo {
