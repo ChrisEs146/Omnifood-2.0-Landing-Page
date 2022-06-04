@@ -1,16 +1,6 @@
 @use "./abstracts" as *;
 
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  height: 7.5rem;
-  background-color: $Background-Color;
-  box-shadow: 0 2px 5px $Grey-4;
-  padding: 0 $Padding-normal;
-  z-index: 1;
-
   &__btn-skip {
     display: none;
     &:link,
@@ -34,7 +24,18 @@
 
   &__logo {
     height: 1.6rem;
-    max-height: 2rem;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 7.5rem;
+    background-color: $Background-Color;
+    box-shadow: 0 2px 5px $Grey-4;
+    padding: 0 $Padding-normal;
+    z-index: 1;
   }
 
   &__links-list {
