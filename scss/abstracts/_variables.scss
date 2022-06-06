@@ -2,24 +2,40 @@
 $font-family: "Rubik", sans-serif;
 $font-weight-400: 400;
 $font-weight-500: 500;
-$font-size-normal: 1.6rem;
+$font-weight-600: 600;
+$font-weight-700: 700;
 $font-size-small: 1.4rem;
+$font-size-normal: 1.6rem;
+$font-size-mid: 2rem;
+$font-size-large: 3.5rem;
+$font-size-large-1: 4rem;
+$font-size-extra-large: 5rem;
+
+// Sizes
+$margin-1: 3.2rem;
+$margin-2: 4.8rem;
+$margin-3: 5.6rem;
 
 // transitions
 $slow-transition: 0.3s ease-in;
 
 // Padding
-$Padding-small: 2rem;
+$Padding-extra-small: 1.4rem;
+$Padding-small: 2.4rem;
 $Padding-normal: 3.2rem;
 $Padding-big: 4.8rem;
+$Padding-big-1: 8rem;
+$Padding-extra-big: 9.6rem;
 
 // Flex or Grid Gaps
 $Gap-small: 2rem;
 $Gap-mid: 3rem;
 $Gap-big: 4rem;
+$Gap-big-1: 5rem;
+$Gap-extra-big: 7rem;
 
 // Breakpoints
-$Screen-small: 31.25em; //500px
+$Screen-small: 36.25em; //500px
 $Screen-mid: 43.75em; // 700px
 $Screen-large: 61.25em; //980px
 $Screen-extra-large: 71.875em; //1150px
