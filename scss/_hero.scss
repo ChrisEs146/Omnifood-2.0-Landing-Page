@@ -1,0 +1,152 @@
+@use "./abstracts/" as *;
+
+.hero {
+  background-color: $Background-Color;
+  padding-top: $Padding-big;
+  padding-bottom: $Padding-extra-big;
+  // padding: $Padding-big 0 $Padding-extra-big 0;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(38rem, 100%), 1fr));
+    gap: $Gap-extra-big;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    min-width: 37.5rem;
+    max-width: 120rem;
+    padding: 0 $Padding-normal;
+  }
+
+  &__text-container {
+    text-align: center;
+  }
+
+  &__title {
+    color: $Grey-1;
+    font-size: $font-size-large;
+    font-weight: $font-weight-600;
+    margin-bottom: $margin-1;
+    letter-spacing: -0.5px;
+  }
+
+  &__description {
+    font-size: $font-size-normal;
+    line-height: 1.5;
+    margin-bottom: $margin-2;
+  }
+
+  &__links-container {
+    display: flex;
+    gap: $Gap-small;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $margin-1;
+  }
+
+  #link-start,
+  #link-learn {
+    padding: $Padding-extra-small $Padding-small;
+    border-radius: 9px;
+  }
+
+  #link-start {
+    &:link,
+    &:visited {
+      background-color: $Primary-Color;
+      color: $White;
+      transition: background-color $slow-transition;
+    }
+
+    &:hover,
+    &:active {
+      background-color: $Secondary-Color;
+    }
+  }
+
+  #link-learn {
+    &:link,
+    &:visited {
+      background-color: $White;
+      color: $Grey-1;
+      transition: box-shadow $slow-transition;
+    }
+    &:hover,
+    &:active {
+      box-shadow: inset 0 0 0 2px $Primary-Color;
+    }
+  }
+
+  &__customers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $Gap-small;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__customers-delivered-text {
+    font-size: $font-size-small;
+    font-weight: $font-weight-700;
+
+    span {
+      color: $Primary-Color;
+    }
+  }
+
+  &__customer-image {
+    margin-right: -1.6rem;
+    width: 4.8rem;
+    border-radius: 50%;
+    border: 3px solid $White;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// @media (min-width: $Screen-small) {
+//   .hero {
+//     &__container {
+//       padding: 0 $Padding-big;
+//     }
+//   }
+// }
+
+@media (min-width: $Screen-large) {
+  .hero {
+    &__text-container {
+      text-align: left;
+
+      h1 {
+        font-size: $font-size-extra-large;
+      }
+
+      p {
+        font-size: $font-size-mid;
+      }
+    }
+
+    &__links-container,
+    &__customers-container {
+      justify-content: flex-start;
+    }
+
+    &__links-container {
+      margin-bottom: $margin-3;
+    }
+
+    #link-start,
+    #link-learn {
+      &:link,
+      &:visited {
+        font-size: $font-size-mid;
+      }
+    }
+
+    &__customers-delivered-text {
+      font-size: $font-size-normal;
+    }
+  }
+}
