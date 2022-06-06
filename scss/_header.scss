@@ -13,6 +13,7 @@
       background-color: $Grey-1;
       padding: 0.4rem 0.8rem;
       border: none;
+      z-index: 10;
       transform: translateY(-120%);
       transition: transform $slow-transition;
     }
