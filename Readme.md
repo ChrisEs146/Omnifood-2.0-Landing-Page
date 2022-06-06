@@ -2,7 +2,7 @@
 
 This is an upgraded version of the omnifood landing page I created a while a go. In this version I'm planning to change the following things:
 
-- Upgrade the HTML markup to stick with the BEM convention.
+- Upgrade the HTML markup to follow the BEM convention.
 - Rewrite all the styles with SCSS.
 - Upgrade the mobile menu, adding icons and new animations.
 - Animate the Featured section.
