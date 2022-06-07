@@ -4,7 +4,6 @@
   background-color: $Background-Color;
   padding-top: $Padding-big;
   padding-bottom: $Padding-extra-big;
-  // padding: $Padding-big 0 $Padding-extra-big 0;
 
   &__container {
     display: grid;
@@ -105,14 +104,6 @@
     }
   }
 }
-
-// @media (min-width: $Screen-small) {
-//   .hero {
-//     &__container {
-//       padding: 0 $Padding-big;
-//     }
-//   }
-// }
 
 @media (min-width: $Screen-large) {
   .hero {
