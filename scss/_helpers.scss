@@ -1,4 +1,10 @@
+// Hides elements without using display none
 .hide-element {
   opacity: 0;
   visibility: hidden;
+}
+
+// Hides elements completely
+.hidden {
+  display: none;
 }
