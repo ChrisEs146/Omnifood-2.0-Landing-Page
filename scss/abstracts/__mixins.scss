@@ -1,0 +1,7 @@
+@use "./variables" as *;
+// Sets the default styles to the section's containers
+@mixin default-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 $Padding-normal;
+}
