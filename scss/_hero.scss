@@ -11,10 +11,7 @@
     gap: $Gap-extra-big;
     align-items: center;
     justify-items: center;
-    margin: 0 auto;
-    min-width: 37.5rem;
-    max-width: 120rem;
-    padding: 0 $Padding-normal;
+    @include default-container;
   }
 
   &__text-container {
