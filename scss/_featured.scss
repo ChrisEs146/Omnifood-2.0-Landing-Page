@@ -1,0 +1,33 @@
+@use "./abstracts/" as *;
+
+.featured {
+  padding-top: $Padding-big;
+  padding-bottom: $Padding-normal;
+
+  &__container {
+    @include default-container;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    font-weight: $font-weight-500;
+    letter-spacing: 0.75px;
+    margin-bottom: $margin-0;
+  }
+
+  &__logos-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    min-height: 1rem;
+    max-height: 3.2rem;
+    height: 2vw;
+    width: auto;
+    filter: brightness(0);
+    opacity: 50%;
+  }
+}
