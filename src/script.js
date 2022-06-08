@@ -8,6 +8,7 @@ const tabBtns = document.querySelectorAll(".js-step-tab");
 const stepContainer = document.querySelectorAll(".js-step-container");
 
 // Events
+//Hamburger menu
 header.addEventListener("click", (e) => {
   const hamBtn = e.target.closest(".header__hamburger-menu");
   if (!hamBtn) return;
