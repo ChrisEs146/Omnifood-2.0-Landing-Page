@@ -10,6 +10,8 @@
 
   &__title-container {
     text-align: center;
+    margin-top: $margin-2;
+    margin-bottom: $margin-4;
     p {
       text-transform: uppercase;
       color: $Secondary-Color;
