@@ -3,6 +3,9 @@
 
 const header = document.querySelector(".js-header");
 const overlay = document.querySelector(".js-overlay");
+const tabContainer = document.querySelector(".js-tab-container");
+const tabBtns = document.querySelectorAll(".js-step-tab");
+const stepContainer = document.querySelectorAll(".js-step-container");
 
 // Events
 header.addEventListener("click", (e) => {
