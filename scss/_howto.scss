@@ -1,0 +1,91 @@
+@use "./abstracts/" as *;
+.howto {
+  padding-top: $Padding-big;
+  padding-bottom: $Padding-normal;
+
+  &__title-container,
+  &__container {
+    @include default-container;
+  }
+
+  &__title-container {
+    text-align: center;
+    p {
+      text-transform: uppercase;
+      color: $Secondary-Color;
+      font-size: $font-size-small;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.75px;
+      margin-bottom: $margin-0;
+    }
+
+    h2 {
+      font-size: $font-size-mid-1;
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: $margin-2;
+    }
+  }
+
+  &__step-container {
+    display: grid;
+    grid-template-columns: repeat(min(30rem, 100%), 1fr);
+    gap: $Gap-big;
+    margin-bottom: $margin-2;
+  }
+
+  &__step-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 35%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: $Background-Color;
+      z-index: -2;
+    }
+
+    &::after {
+      width: 50%;
+      padding-bottom: 50%;
+      background-color: $Tertiary-Color;
+      z-index: -1;
+    }
+  }
+
+  &__step-number {
+    display: block;
+    font-size: $font-size-extra-large;
+    font-weight: $font-weight-600;
+    color: $Grey-2;
+    margin-bottom: $margin-base;
+  }
+
+  &__step-title {
+    font-size: calc($font-size-normal + 0.3rem);
+    font-weight: $font-weight-600;
+    color: $Grey-1;
+    margin-bottom: $margin-1;
+    letter-spacing: -0.5px;
+  }
+
+  &__step-description {
+    font-size: $font-size-normal;
+    line-height: 1.8;
+  }
+}
