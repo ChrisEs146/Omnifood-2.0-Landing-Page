@@ -113,7 +113,7 @@
   }
 
   &__step-title {
-    font-size: calc($font-size-normal + 0.3rem);
+    font-size: clamp(calc($font-size-normal + 0.3rem), 2.5vw, calc($font-size-large - 0.3rem));
     font-weight: $font-weight-600;
     color: $Grey-1;
     margin-bottom: $margin-1;
