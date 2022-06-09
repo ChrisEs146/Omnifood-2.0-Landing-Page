@@ -1,0 +1,166 @@
+@use "./abstracts/" as *;
+.howto {
+  padding-top: $Padding-big;
+  padding-bottom: $Padding-normal;
+
+  &__title-container,
+  &__container {
+    @include default-container;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin-top: $margin-2;
+    margin-bottom: $margin-4;
+    p {
+      text-transform: uppercase;
+      color: $Secondary-Color;
+      font-size: $font-size-normal;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.75px;
+      margin-bottom: $margin-0;
+    }
+
+    h2 {
+      font-size: clamp($font-size-mid-1, 2.5vw, $font-size-large-1);
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: $margin-2;
+    }
+  }
+
+  &__tab-container {
+    display: none;
+    justify-content: center;
+    gap: calc($margin-0 + 0.4rem);
+    margin-bottom: $margin-3;
+  }
+
+  &__step-tab {
+    display: inline-block;
+    background-color: $Primary-Color;
+    font-size: $font-size-normal;
+    font-family: $font-family;
+    font-weight: $font-weight-500;
+    color: $White;
+    border: 4px solid transparent;
+    padding: $Padding-extra-small $Padding-big;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all $slow-transition;
+
+    &:hover {
+      border: 4px solid $Tertiary-Color;
+    }
+  }
+
+  &__step-tab--active {
+    transform: translateY(-30%);
+    background-color: $White;
+    border: 4px solid $Primary-Color;
+    color: $Primary-Color;
+  }
+
+  &__step-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+    gap: $Gap-big;
+    align-items: center;
+    margin-bottom: $margin-4;
+  }
+
+  &__step-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 54rem;
+    max-height: 38rem;
+
+    img {
+      width: 35%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &::before {
+      width: 60%;
+      padding-bottom: 60%;
+      background-color: $Background-Color;
+      z-index: -2;
+    }
+
+    &::after {
+      width: 50%;
+      padding-bottom: 50%;
+      background-color: $Tertiary-Color;
+      z-index: -1;
+    }
+  }
+
+  &__step-number {
+    display: block;
+    font-size: clamp($font-size-extra-large, 5.5vw, calc($font-size-extra-large + 3rem));
+    font-weight: $font-weight-600;
+    color: $Grey-2;
+    margin-bottom: $margin-base;
+  }
+
+  &__step-title {
+    font-size: clamp(calc($font-size-normal + 0.3rem), 2.5vw, calc($font-size-large - 0.3rem));
+    font-weight: $font-weight-600;
+    color: $Grey-1;
+    margin-bottom: $margin-1;
+    letter-spacing: -0.5px;
+  }
+
+  &__step-description {
+    font-size: clamp($font-size-normal, 2vw, calc($font-size-normal + 0.2rem));
+    line-height: 1.8;
+  }
+}
+
+@media (min-width: $Screen-large) {
+  .howto {
+    &__tab-container {
+      display: flex;
+    }
+
+    &__step-container {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    &__step-container--active {
+      display: grid;
+      animation-name: fadeIn;
+      animation-duration: 0.7s;
+      animation-direction: normal;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    100% {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: visible;
+    }
+  }
+}
