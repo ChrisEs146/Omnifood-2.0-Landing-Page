@@ -106,7 +106,7 @@
 
   &__step-number {
     display: block;
-    font-size: $font-size-extra-large;
+    font-size: clamp($font-size-extra-large, 5.5vw, calc($font-size-extra-large + 3rem));
     font-weight: $font-weight-600;
     color: $Grey-2;
     margin-bottom: $margin-base;
