@@ -34,6 +34,34 @@
     box-shadow: 0 2px 5px $Grey-4;
     padding: 0 $Padding-normal;
     z-index: 5;
+
+    &.sticky {
+      position: fixed;
+      background-color: $Background-Color;
+      animation-name: nav-slide-in;
+      animation-duration: 0.2s;
+      animation-direction: normal;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes nav-slide-in {
+    0% {
+      top: -20px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+  @keyframes nav-slide-out {
+    0% {
+      top: 0px;
+    }
+    100% {
+      top: -20px;
+    }
   }
 
   &__links-list {
