@@ -55,15 +55,6 @@
     }
   }
 
-  @keyframes nav-slide-out {
-    0% {
-      top: 0px;
-    }
-    100% {
-      top: -20px;
-    }
-  }
-
   &__links-list {
     display: flex;
     flex-direction: column;
