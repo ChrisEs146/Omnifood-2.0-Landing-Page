@@ -67,7 +67,7 @@
     display: grid;
     grid-template-columns: repeat(min(30rem, 100%), 1fr);
     gap: $Gap-big;
-    margin-bottom: $margin-2;
+    margin-bottom: $margin-4;
   }
 
   &__step-image {
