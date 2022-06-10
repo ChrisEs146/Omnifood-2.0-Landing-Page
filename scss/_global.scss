@@ -17,10 +17,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   font-family: $font-family;
   font-weight: $font-weight-400;
   line-height: 1;
