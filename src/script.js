@@ -10,6 +10,18 @@ const tabContainer = document.querySelector(".js-tab-container");
 const tabBtns = document.querySelectorAll(".js-step-tab");
 const stepContainer = document.querySelectorAll(".js-step-container");
 
+//Functions
+/**
+ * Closes the mobile menu by removing the open class
+ * from the header, lock-screen class from the main body and
+ * adding the hide-element class to the overlay.
+ */
+const closeMenu = function () {
+  header.classList.remove("open");
+  overlay.classList.add("hide-element");
+  mainBody.classList.remove("lock-screen");
+};
+
 // Events
 //Hamburger menu
 header.addEventListener("click", (e) => {
