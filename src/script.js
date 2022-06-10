@@ -1,9 +1,10 @@
 "use strict";
 // SELECTIONS
-
+const mainBody = document.querySelector("body");
 const header = document.querySelector(".js-header");
 const navigation = document.querySelector(".js-navigation");
 const hero = document.querySelector(".js-hero");
+const headerLinks = document.querySelectorAll(".js-header-links");
 const overlay = document.querySelector(".js-overlay");
 const tabContainer = document.querySelector(".js-tab-container");
 const tabBtns = document.querySelectorAll(".js-step-tab");
