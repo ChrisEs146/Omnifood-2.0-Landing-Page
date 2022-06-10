@@ -25,8 +25,13 @@ const closeMenu = function () {
 header.addEventListener("click", (e) => {
   const hamBtn = e.target.closest(".header__hamburger-menu");
   if (!hamBtn) return;
-  header.classList.toggle("open");
-  overlay.classList.toggle("hide-element");
+  if (!header.classList.contains("open")) {
+    header.classList.add("open");
+    overlay.classList.remove("hide-element");
+    mainBody.classList.add("lock-screen");
+  } else {
+    closeMenu();
+  }
 });
 
 // Closing menu when link is clicked
