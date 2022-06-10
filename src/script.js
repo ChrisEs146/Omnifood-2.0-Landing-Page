@@ -31,6 +31,13 @@ header.addEventListener("click", (e) => {
   overlay.classList.toggle("hide-element");
 });
 
+// Closing menu when link is clicked
+if (header.classList.contains("open")) {
+  headerLinks.forEach((e) => {
+    e.addEventListener("click", closeMenu);
+  });
+}
+
 //How to Tabs
 tabContainer.addEventListener("click", (e) => {
   const tab = e.target.closest(".howto__step-tab");
