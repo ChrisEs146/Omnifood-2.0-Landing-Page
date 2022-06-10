@@ -1,7 +1,8 @@
 "use strict";
 // SELECTIONS
-
+const mainBody = document.querySelector("body");
 const header = document.querySelector(".js-header");
+const headerLinks = document.querySelectorAll(".js-header-links");
 const overlay = document.querySelector(".js-overlay");
 const tabContainer = document.querySelector(".js-tab-container");
 const tabBtns = document.querySelectorAll(".js-step-tab");
