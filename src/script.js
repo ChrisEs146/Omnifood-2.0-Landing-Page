@@ -34,14 +34,14 @@ header.addEventListener("click", (e) => {
   } else {
     closeMenu();
   }
-});
 
-// Closing menu when link is clicked
-if (header.classList.contains("open")) {
-  headerLinks.forEach((e) => {
-    e.addEventListener("click", closeMenu);
-  });
-}
+  // Closing menu when link is clicked
+  if (header.classList.contains("open")) {
+    headerLinks.forEach((e) => {
+      e.addEventListener("click", closeMenu);
+    });
+  }
+});
 
 //How to Tabs
 tabContainer.addEventListener("click", (e) => {
