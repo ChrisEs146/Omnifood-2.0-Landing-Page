@@ -1,0 +1,157 @@
+@use "./abstracts/" as *;
+.meals {
+  padding-top: $Padding-big;
+  padding-bottom: $Padding-normal;
+
+  &__title-container,
+  &__container {
+    @include default-container;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin-top: $margin-2;
+    margin-bottom: $margin-4;
+    p {
+      text-transform: uppercase;
+      color: $Secondary-Color;
+      font-size: $font-size-normal;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.75px;
+      margin-bottom: $margin-0;
+    }
+
+    h2 {
+      font-size: clamp($font-size-mid-1, 2.5vw, $font-size-large-1);
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      margin-bottom: $margin-2;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+    gap: calc($Gap-big + 0.8rem);
+    // place-items: center;
+  }
+
+  &__card {
+    border-radius: 12px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.095);
+    overflow: hidden;
+    // max-width: 24.9rem;
+    // height: auto;
+    transition: transform $slow-transition;
+
+    &:hover {
+      transform: translateY(-2.4rem);
+    }
+
+    &-content {
+      padding: $Padding-normal $Padding-big $Padding-big $Padding-big;
+    }
+
+    &-title {
+      font-size: $font-size-mid;
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      margin-bottom: $margin-1;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: $Gap-small;
+      font-size: calc($font-size-normal + 0.2rem);
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: $Gap-small;
+      }
+    }
+
+    &-tags {
+      display: flex;
+      gap: $Gap-small;
+      margin-bottom: calc($margin-base + 0.2rem);
+    }
+  }
+
+  &__tag {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: calc($font-size-small - 0.2rem);
+    font-weight: $font-weight-600;
+    color: $Grey-1;
+    letter-spacing: 1px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+
+    &--vegetarian {
+      background-color: $Tag-Vegetarian;
+    }
+    &--vegan {
+      background-color: $Tag-Vegan;
+    }
+    &--paleo {
+      background-color: $Tag-Paleo;
+    }
+  }
+
+  &__diet {
+    // max-width: 24.9rem;
+    // height: auto;
+    &-title {
+      font-size: $font-size-mid;
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      margin-bottom: $margin-1;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: $Gap-small;
+      font-size: calc($font-size-normal + 0.2rem);
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: $Gap-small;
+      }
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $Primary-Color;
+    stroke: currentColor;
+  }
+
+  &__link-container {
+    @include default-container;
+
+    #recipes-link {
+      &:link,
+      &:visited {
+        display: inline-block;
+        color: $Primary-Color;
+        text-align: center;
+        font-weight: $font-weight-400;
+        padding-bottom: 0.2rem;
+        border-bottom: 1px solid currentColor;
+        transition: border $slow-transition;
+      }
+
+      &:hover {
+        color: $Secondary-Color;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
