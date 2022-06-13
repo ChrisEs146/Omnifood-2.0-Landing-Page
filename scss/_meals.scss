@@ -59,8 +59,12 @@
       margin-bottom: $margin-1;
     }
 
-    &-list {
+    &-list,
+    &-tags {
       display: flex;
+    }
+
+    &-list {
       flex-direction: column;
       gap: $Gap-small;
       font-size: $font-size-normal;
