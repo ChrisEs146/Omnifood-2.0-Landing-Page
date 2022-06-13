@@ -157,3 +157,12 @@
     }
   }
 }
+
+@media (min-width: $Screen-small-1) {
+  .meals {
+    &__diet {
+      grid-column: span 2;
+    }
+  }
+}
+
