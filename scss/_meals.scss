@@ -133,7 +133,10 @@
   }
 
   &__link-container {
-    @include default-container;
+    text-align: center;
+    margin: $margin-2 auto 0 auto;
+    max-width: 120rem;
+    padding: 0 $Padding-normal;
 
     #recipes-link {
       &:link,
