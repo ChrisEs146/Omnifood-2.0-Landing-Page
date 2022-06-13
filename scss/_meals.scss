@@ -118,7 +118,7 @@
       font-size: calc($font-size-normal + 0.2rem);
 
       li {
-        display: flex;
+        display: inherit;
         align-items: center;
         gap: $Gap-small;
       }
