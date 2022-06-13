@@ -70,7 +70,7 @@
       font-size: $font-size-normal;
 
       li {
-        display: flex;
+        display: inherit;
         align-items: center;
         gap: $Gap-small;
       }
