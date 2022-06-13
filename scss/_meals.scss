@@ -166,3 +166,14 @@
   }
 }
 
+@media (min-width: $Screen-mid-1) {
+  .meals {
+    &__card {
+      width: 80%;
+    }
+
+    &__diet {
+      grid-column: auto;
+    }
+  }
+}
