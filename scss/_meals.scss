@@ -1,6 +1,5 @@
 @use "./abstracts/" as *;
 .meals {
-  padding-top: $Padding-big;
   padding-bottom: $Padding-normal;
 
   &__title-container,
