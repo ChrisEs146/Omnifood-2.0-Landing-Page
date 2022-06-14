@@ -69,6 +69,10 @@
 
       a {
         font-size: inherit;
+
+        &:first-child {
+          margin-bottom: $margin-base;
+        }
       }
     }
   }
