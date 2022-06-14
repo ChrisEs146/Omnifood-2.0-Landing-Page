@@ -43,6 +43,7 @@
     color: $Grey-2;
     font-size: clamp($font-size-small, 2vw, $font-size-normal);
     line-height: 1.6;
+    max-width: 28ch;
   }
 
   &__section-container {
