@@ -54,10 +54,7 @@
       &::after {
         content: "BEST VALUE";
         position: absolute;
-        top: 4.7%;
-        right: -15.7%;
-        transform: rotate(45deg);
-        font-size: $font-size-small;
+        font-size: clamp(calc($font-size-small - 0.2rem), 1vw, $font-size-small);
         font-weight: $font-weight-700;
         color: $Grey-1;
         background-color: $Tag-Paleo;
