@@ -70,7 +70,7 @@
       text-align: center;
 
       h3 {
-        font-size: $font-size-normal;
+        font-size: clamp($font-size-normal, 2vw, $font-size-mid);
         font-weight: $font-weight-600;
         color: $Primary-Color;
         text-transform: uppercase;
