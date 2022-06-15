@@ -1,0 +1,179 @@
+@use "./abstracts/" as *;
+.pricing {
+  padding: calc($Padding-big + 1rem) 0;
+
+  &__container,
+  &__title-container,
+  &__tax-information,
+  &__features-container {
+    padding: $Padding-normal;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin-top: $margin-2;
+
+    p {
+      text-transform: uppercase;
+      color: $Secondary-Color;
+      font-size: $font-size-normal;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.75px;
+      margin-bottom: $margin-0;
+    }
+
+    h2 {
+      font-size: clamp($font-size-mid-1, 2.5vw, $font-size-large-1);
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 100%), 1fr);
+    gap: $Gap-big;
+  }
+
+  &__card {
+    padding: $Padding-small;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 2px $Background-Color;
+    width: clamp(75%, 2vw, 100%);
+
+    &--premium {
+      position: relative;
+      overflow: hidden;
+      background-color: $Background-Color;
+
+      &::after {
+        content: "BEST VALUE";
+        position: absolute;
+        top: 4.7%;
+        right: -15.7%;
+        transform: rotate(45deg);
+        font-size: $font-size-small;
+        font-weight: $font-weight-700;
+        color: $Grey-1;
+        background-color: $Tag-Paleo;
+        padding: calc($Padding-extra-small - 0.6rem) $Padding-big;
+      }
+    }
+
+    &-title {
+      margin-bottom: $margin-1;
+      text-align: center;
+
+      h3 {
+        font-size: $font-size-normal;
+        font-weight: $font-weight-600;
+        color: $Primary-Color;
+        text-transform: uppercase;
+        margin-bottom: $margin-0;
+      }
+
+      p:last-child {
+        font-size: $font-size-small;
+        line-height: 1.6;
+        color: $Grey-4;
+      }
+    }
+
+    &-price {
+      font-size: $font-size-large-1;
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      margin-bottom: $margin-base;
+    }
+
+    &-details {
+      display: flex;
+      flex-direction: column;
+      gap: calc($Gap-small - 1rem);
+      font-size: $font-size-normal;
+      line-height: 1.2;
+
+      li {
+        display: inherit;
+        gap: $Gap-small;
+        align-items: center;
+      }
+    }
+
+    &-btn {
+      margin-top: $margin-1;
+      text-align: center;
+
+      #pricing-btn {
+        &:link,
+        &:visited {
+          background-color: $Primary-Color;
+          padding: calc($Padding-extra-small - 0.6rem) calc($Padding-extra-small);
+          border-radius: 9px;
+          color: $Whie;
+          transition: background-color $slow-transition;
+        }
+
+        &:hover,
+        &:active {
+          background-color: $Secondary-Color;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &--card {
+      color: $Primary-Color;
+    }
+
+    &--absent {
+      color: $Absent;
+    }
+
+    &--feature {
+      color: $Primary-Color;
+      background-color: $Background-Color;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__tax-information {
+    font-style: $font-size-small;
+    line-height: 1.6;
+    font-style: italic;
+    padding: $Padding-extra-small $Padding-small $Padding-big $Padding-small;
+  }
+
+  &__features-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  &__feature {
+    &-title {
+      font-size: $font-size-mid;
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      margin-bottom: calc($margin-base + 0.8rem);
+    }
+
+    &-text {
+      font-size: $font-size-normal;
+      line-height: 1.5;
+    }
+  }
+
+  &__icon-container {
+    margin-bottom: $margin-0;
+  }
+}
