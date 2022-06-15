@@ -1,0 +1,106 @@
+@use "./abstracts/" as *;
+.testimonials {
+  background-color: $Background-Color;
+  &__container,
+  &__title-container {
+    padding: $Padding-normal;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $Gap-big;
+  }
+
+  &__title-container {
+    text-align: center;
+    margin-top: $margin-2;
+
+    p {
+      text-transform: uppercase;
+      color: $Secondary-Color;
+      font-size: $font-size-normal;
+      font-weight: $font-weight-500;
+      letter-spacing: 0.75px;
+      margin-bottom: $margin-0;
+    }
+
+    h2 {
+      font-size: clamp($font-size-mid-1, 2.5vw, $font-size-large-1);
+      font-weight: $font-weight-600;
+      color: $Grey-1;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+  }
+
+  &__reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $Gap-big;
+
+    &-item {
+      img {
+        width: 6.4rem;
+        border-radius: 50%;
+        margin-bottom: $margin-base;
+      }
+
+      p {
+        font-size: $font-size-normal;
+        line-height: 1.6;
+        margin-bottom: calc($margin-base + 0.6rem);
+      }
+
+      footer {
+        font-size: $font-size-small;
+        font-weight: $font-weight-500;
+      }
+    }
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc($Gap-small - 0.8rem);
+
+    &-item {
+      overflow: hidden;
+      img {
+        width: 100%;
+        transition: transform $slow-transition;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $Screen-small) {
+  .testimonials {
+    &__reviews {
+      grid-template-columns: repeat(2, minmax(min(15rem, 100%), 1fr));
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+@media (min-width: $Screen-extra-large) {
+  .testimonials {
+    &__container {
+      grid-template-columns: 2.5fr 1.5fr;
+      align-items: center;
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
