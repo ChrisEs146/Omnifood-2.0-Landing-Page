@@ -63,7 +63,7 @@
 
   &__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: calc($Gap-small - 0.4rem);
 
     &-item {
