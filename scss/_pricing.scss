@@ -60,7 +60,7 @@
         font-weight: $font-weight-700;
         color: $Grey-1;
         background-color: $Tag-Paleo;
-        padding: calc($Padding-extra-small - 0.6rem) $Padding-big;
+        padding: calc($Padding-extra-small - 0.6rem) calc($Padding-extra-small - 0.4rem);
       }
     }
 
