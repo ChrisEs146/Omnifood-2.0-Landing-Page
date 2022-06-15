@@ -112,6 +112,7 @@
       #pricing-btn {
         &:link,
         &:visited {
+          font-size: clamp($font-size-normal, 2vw, $font-size-mid);
           background-color: $Primary-Color;
           padding: calc($Padding-extra-small - 0.6rem) calc($Padding-extra-small);
           border-radius: 9px;
