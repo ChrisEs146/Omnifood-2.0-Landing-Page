@@ -37,6 +37,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(28rem, 100%), 1fr));
     gap: $Gap-big;
+    justify-items: center;
   }
 
   &__card {
