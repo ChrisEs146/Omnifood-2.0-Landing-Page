@@ -181,3 +181,21 @@
     margin-bottom: $margin-0;
   }
 }
+
+@media (min-width: $Screen-mid) {
+  .pricing {
+    &__container {
+      justify-items: end;
+    }
+
+    &__card {
+      &--premium {
+        justify-self: start;
+      }
+    }
+
+    &__features-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
