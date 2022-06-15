@@ -159,6 +159,7 @@
   &__features-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: $Gap-small;
     text-align: center;
   }
 
