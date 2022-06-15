@@ -79,3 +79,16 @@
     }
   }
 }
+
+@media (min-width: $Screen-small) {
+  .testimonials {
+    &__reviews {
+      grid-template-columns: repeat(2, minmax(min(15rem, 100%), 1fr));
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
