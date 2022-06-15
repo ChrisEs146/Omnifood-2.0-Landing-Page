@@ -78,7 +78,7 @@
       }
 
       p:last-child {
-        font-size: $font-size-small;
+        font-size: clamp($font-size-small, 2vw, $font-size-normal);
         line-height: 1.6;
         color: $Grey-2;
       }
