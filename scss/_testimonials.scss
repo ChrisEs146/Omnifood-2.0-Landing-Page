@@ -92,3 +92,15 @@
   }
 }
 
+@media (min-width: $Screen-extra-large) {
+  .testimonials {
+    &__container {
+      grid-template-columns: 2.5fr 1.5fr;
+      align-items: center;
+    }
+
+    &__gallery {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
