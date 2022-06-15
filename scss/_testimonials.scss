@@ -64,7 +64,7 @@
   &__gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: calc($Gap-small - 0.4rem);
+    gap: calc($Gap-small - 0.8rem);
 
     &-item {
       overflow: hidden;
