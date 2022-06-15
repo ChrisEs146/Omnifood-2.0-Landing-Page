@@ -165,7 +165,7 @@
 
   &__feature {
     &-title {
-      font-size: $font-size-mid;
+      font-size: clamp($font-size-mid, 2vw, calc($font-size-mid + 0.4rem));
       font-weight: $font-weight-600;
       color: $Grey-1;
       margin-bottom: calc($margin-base + 0.8rem);
