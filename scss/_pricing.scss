@@ -150,8 +150,9 @@
 
   &__tax-information {
     text-align: center;
-    line-height: 1.6;
+    font-size: $font-size-small;
     font-style: italic;
+    line-height: 1.6;
     padding: $Padding-extra-small $Padding-small $Padding-big $Padding-small;
   }
 
