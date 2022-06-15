@@ -41,7 +41,7 @@
   }
 
   &__card {
-    padding: $Padding-small;
+    padding: clamp($Padding-small, 4vw, calc($Padding-big + 1rem));
     border-radius: 12px;
     box-shadow: inset 0 0 0 2px $Background-Color;
     width: fit-content;
