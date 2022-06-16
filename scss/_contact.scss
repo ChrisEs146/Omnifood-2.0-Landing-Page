@@ -1,0 +1,95 @@
+@use "./abstracts/" as *;
+.form {
+  padding: calc($Padding-big) 0;
+
+  &__container {
+    @include default-container;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: linear-gradient(to right bottom, $Gradient-Color, $Tertiary-Color);
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+
+    &*:focus {
+      outline: none;
+      box-shadow: 0 0 0 4px $Tertiary-Color;
+    }
+  }
+
+  &__text-container {
+    color: $Cta-Font-Color;
+    padding: $Padding-big;
+
+    h3 {
+      color: inherit;
+      margin-bottom: $margin-0;
+    }
+
+    P {
+      font-size: $font-size-normal;
+      line-height: 1.6;
+      margin-bottom: $margin-1;
+    }
+  }
+
+  &__cta {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $Gap-mid;
+
+    label {
+      display: block;
+      font-size: $font-size-normal;
+      font-weight: $font-weight-600;
+      margin-bottom: $margin-base;
+    }
+
+    input,
+    select {
+      font-family: inherit;
+      font-size: $font-size-normal;
+      color: inherit;
+      width: 100%;
+      padding: $Padding-extra-small;
+      border: none;
+      border-radius: 9px;
+      background-color: $Background-Color;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    input::placeholder {
+      color: $Grey-2;
+    }
+  }
+
+  &__btn {
+    align-self: end;
+    font-family: inherit;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-600;
+    color: $White;
+    height: 4rem;
+    padding: $Padding-extra-small;
+    border: none;
+    border-radius: 9px;
+    background-color: $Cta-Font-Color;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      cursor: pointer;
+      color: $Grey-2;
+      background-color: $White;
+    }
+  }
+
+  &__cta-image {
+    background-image: linear-gradient(to right bottom, $Gradient-Color-1, $Gradient-Color-2),
+      url(../img/eating.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
