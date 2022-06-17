@@ -93,6 +93,7 @@
 
   &__cta-image {
     grid-row: 1;
+    height: 32rem;
     background-image: linear-gradient(to right bottom, $Gradient-Color-1, $Gradient-Color-2),
       url(../img/eating.jpg);
     background-size: cover;
