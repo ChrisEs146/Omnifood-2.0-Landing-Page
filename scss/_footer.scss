@@ -93,19 +93,19 @@
       font-size: clamp($font-size-normal, 2vw, calc($font-size-normal + 0.2rem));
       font-weight: $font-weight-500;
     }
+  }
 
-    #footer-link {
-      &:link,
-      &:visited {
-        color: $Grey-2;
-        font-size: clamp($font-size-small, 2vw, $font-size-normal);
-        font-weight: $font-weight-400;
-      }
+  &__link {
+    &:link,
+    &:visited {
+      color: $Grey-2;
+      font-size: clamp($font-size-small, 2vw, $font-size-normal);
+      font-weight: $font-weight-400;
+    }
 
-      &:hover,
-      &:active {
-        color: $Grey-1;
-      }
+    &:hover,
+    &:active {
+      color: $Grey-1;
     }
   }
 }
