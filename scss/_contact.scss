@@ -24,7 +24,9 @@
     color: $Cta-Font-Color;
     padding: $Padding-small;
 
-    h3 {
+    h2 {
+      font-size: $font-size-mid-1;
+      line-height: 1.2;
       color: inherit;
       margin-bottom: $margin-0;
     }
