@@ -113,3 +113,26 @@
     }
   }
 }
+
+@media (min-width: $Screen-large) {
+  .form {
+    &__text-container {
+      padding: calc($Padding-big + 0.4rem);
+
+      h2 {
+        font-size: calc($font-size-mid-1 + 0.3rem);
+      }
+    }
+    &__cta-container {
+      grid-template-columns: repeat(2, 1fr);
+
+      label {
+        font-size: $font-size-normal;
+      }
+    }
+
+    &__btn {
+      align-self: end;
+    }
+  }
+}
