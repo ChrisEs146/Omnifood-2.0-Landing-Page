@@ -82,6 +82,7 @@
     border-radius: 9px;
     background-color: $Cta-Font-Color;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: color $slow-transition, background-color $slow-transition;
 
     &:hover {
       cursor: pointer;
