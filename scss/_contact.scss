@@ -100,3 +100,16 @@
     background-position: center;
   }
 }
+
+@media (min-width: $Screen-small-1) {
+  .form {
+    &__wrapper {
+      grid-template-columns: 2fr 1.5fr;
+    }
+
+    &__cta-image {
+      grid-row: initial;
+      height: auto;
+    }
+  }
+}
