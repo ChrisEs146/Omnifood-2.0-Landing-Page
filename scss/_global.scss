@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: inherit;
   font-family: $font-family;
   font-weight: $font-weight-400;
   line-height: 1;
