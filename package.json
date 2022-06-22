@@ -5,7 +5,7 @@
   "browserlist": "> 0.5%, not dead",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build index.html --dist-dir ./dist"
+    "build": "parcel build ./src/index.html --dist-dir ./dist"
   },
   "author": "Chris",
   "license": "ISC",
