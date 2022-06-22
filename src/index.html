@@ -678,7 +678,14 @@
                 Healthy, tasty and hassle-free meals are waiting for you. Start eating well today.
                 You can cancel or pause anytime. And the first meal is on us!
               </p>
-              <form action="https://formspree.io/f/xlezvqrl" class="form__cta" method="POST">
+              <form
+                action="https://formspree.io/f/xlezvqrl"
+                method="post"
+                name="Omni-Form"
+                id="omni-form"
+                class="form__cta"
+                autocomplete="off"
+              >
                 <fieldset class="form__cta-container">
                   <div>
                     <label for="full-name">Full Name</label>
@@ -707,12 +714,12 @@
                     <select name="selection" id="selection" required>
                       <option value="">Please choose one option</option>
                       <option value="Friends">Friends and Family</option>
-                      <option value="facebook">Facebook Ad</option>
-                      <option value="podcast">Podcast</option>
-                      <option value="other">Others</option>
+                      <option value="Facebook">Facebook Ad</option>
+                      <option value="Podcast">Podcast</option>
+                      <option value="Other">Others</option>
                     </select>
                   </div>
-                  <button class="form__btn">Sign up now</button>
+                  <button type="submit" class="form__btn">Sign up now</button>
                 </fieldset>
               </form>
             </div>
