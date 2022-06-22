@@ -83,6 +83,10 @@ const navCallback = (entries) => {
 const navObserver = new IntersectionObserver(navCallback, navOptions);
 navObserver.observe(header);
 
+// Resetting form after submission
+window.addEventListener("beforeunload", () => {
+  contactForm.reset();
+});
 // Updating footer's copyright date
 const year = new Date().getFullYear();
 footerYear.textContent = year;
