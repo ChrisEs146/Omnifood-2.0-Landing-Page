@@ -75,7 +75,7 @@ const navCallback = (entries) => {
     navigation.classList.add("sticky");
   } else {
     navigation.classList.remove("sticky");
-    hero.style.marginTop = `0px`;
+    hero.style.marginTop = "0px";
   }
 };
 
