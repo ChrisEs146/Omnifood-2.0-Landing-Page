@@ -115,7 +115,7 @@
         &:visited {
           font-size: clamp($font-size-normal, 2vw, $font-size-mid);
           background-color: $Primary-Color;
-          padding: clamp(0.8rem, 2vw, 1.6rem) clamp(1.6rem, 2.5vw, 3.2rem);
+          padding: clamp(1rem, 2vw, 1.6rem) clamp(1.6rem, 2.5vw, 3.2rem);
           border-radius: 9px;
           color: $White;
           transition: background-color $slow-transition;

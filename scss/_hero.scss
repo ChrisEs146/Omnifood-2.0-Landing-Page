@@ -102,6 +102,16 @@
   }
 }
 
+@media (max-width: $Screen-base) {
+  #link-start,
+  #link-learn {
+    &:link,
+    &:visited {
+      font-size: $font-size-small;
+    }
+  }
+}
+
 @media (min-width: $Screen-large) {
   .hero {
     &__text-container {
