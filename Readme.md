@@ -12,4 +12,4 @@ This is a landing page created for an hypothetical company called Omnifood. The 
 - On large screen, the **How To** section will incorporate a tab component to show each step.
 - Several section in the landing page were created using, either, flex or grid layouts to improve responsiveness and avoid media queries as much as possible.
 - The contact form is completely functional and will send the information to a registered email in the **Formspree platform**. Here is the final result for a user whose name is **Arthur Swanson**, with an email **arthur@email.com** and a selection of **Facebook**.
-  ![Email received from Formspree](/img/Formspree_format.png)
+  <img src="./img/Formspree_format.png" alt="Formspree Email Format" width="50%" height="50%" />
