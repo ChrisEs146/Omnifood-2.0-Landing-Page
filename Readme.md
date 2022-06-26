@@ -13,3 +13,10 @@ This is a landing page created for an hypothetical company called Omnifood. The 
 - Several section in the landing page were created using, either, flex or grid layouts to improve responsiveness and avoid media queries as much as possible.
 - The contact form is completely functional and will send the information to a registered email in the **Formspree platform**. Here is the final result for a user whose name is **Arthur Swanson**, with an email **arthur@email.com** and a selection of **Facebook**.
   <img src="./img/Formspree_format.png" alt="Formspree Email Format" width="50%" height="50%" />
+
+**Notes**
+It's important to mention that there are mock links or not functional links in the landing page. These links were included in order to complete the design requirements. Some of these links are:
+
+- **See all recipes** in Meals sections.
+- **Start Now** in Pricing section.
+- **All** in the Footer.
