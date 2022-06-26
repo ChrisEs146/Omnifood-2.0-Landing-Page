@@ -1,10 +1,14 @@
 @use "./abstracts" as *;
 // Resets
 
-*,
-::before,
-::after {
+html {
   box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -15,12 +19,6 @@
 *:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px $Tertiary-Color;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
