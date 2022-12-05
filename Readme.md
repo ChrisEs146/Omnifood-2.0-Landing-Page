@@ -1,6 +1,7 @@
 ## Omnifood 2.0
 
-This is a landing page created for an hypothetical company called Omnifood. The landing page's main goal is to collect user information (Name, Email) to create a email list.
+This is a landing page created for an hypothetical company called Omnifood. The landing page's main goal is to collect user information (Name, Email) to create an email list.
+Feel free to check the [Live Demo](https://omnifood-landing-2.netlify.app).
 
 **Tools used in this project:** HTML, SCSS, Parcel, JavaScript and the [Formspree platform](https://formspree.io/).
 
